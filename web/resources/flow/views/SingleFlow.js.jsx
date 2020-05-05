@@ -154,8 +154,9 @@ class SingleFlow extends Binder {
                 <ul>
                   {taskListItems.map((task, i) =>
                     <li key={task._id + i}>
-                      <h3>{task.name}</h3>
+                    <Link to={`/tasks/${task._id}`}> <h3>{task.name}</h3> </Link>
                       <p>{task.description}</p>
+                      <Link className="yt-btn x-small" to={`/notes/new/${task._id}/_task`}> New Note </Link>
                     </li>
                   )}
                 </ul>

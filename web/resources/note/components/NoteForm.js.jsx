@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 // import form components
-import { TextInput } from '../../../global/components/forms';
+import { TextAreaInput } from '../../../global/components/forms';
 
 const  NoteForm = ({
   cancelLink
@@ -32,13 +32,13 @@ const  NoteForm = ({
         <div className="form-container -slim">
           <form name="noteForm" className="note-form" onSubmit={handleFormSubmit}>
             {header}
-            <TextInput
+            <TextAreaInput
               change={handleFormChange}
-              label="Name"
-              name="note.name"
-              placeholder="Name (required)"
+              label="Content"
+              name="note.content"
+              placeholder="Content (required)"
               required={true}
-              value={note.name}
+              value={note.content}
             />
             <div className="input-group">
               <div className="yt-row space-between">
