@@ -27,7 +27,7 @@ class NoteRouter extends Binder {
     return (
       <Switch>
         <YTRoute exact login={true}  path="/notes" component={NoteList} />
-        <YTRoute exact login={true} path="/notes/new" component={CreateNote} />
+        <YTRoute exact login={true} path="/notes/new/:taskId/_task" component={CreateNote} />
         <YTRoute exact login={true}  path="/notes/:noteId" component={SingleNote}/>
         <YTRoute exact login={true} path="/notes/:noteId/update" component={UpdateNote}/>
       </Switch>
