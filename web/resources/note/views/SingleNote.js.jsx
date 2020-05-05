@@ -56,7 +56,7 @@ class SingleNote extends Binder {
           (isFetching ? <h2>Loading...</h2> : <h2>Empty.</h2>)
           :
           <div style={{ opacity: isFetching ? 0.5 : 1 }}>
-            <h1> { selectedNote.name }
+            <h1> { selectedNote.content }
             </h1>
             <hr/>
             <p> <em>Other characteristics about the Note would go here.</em></p>
