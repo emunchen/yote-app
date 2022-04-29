@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/fugitivelabs/yote",
   "dependencies": {
-    "async": "^2.1.2",
+    "async": "^2.6.4",
     "body-parser": "^1.14.1",
     "compression": "^1.6.2",
     "connect-mongo": "^1.3.2",
